@@ -11,17 +11,22 @@
   },
   "dependencies": {
     "@nuxt/eslint": "^0.6.0",
+    "@nuxtjs/i18n": "^8.5.5",
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "@primevue/themes": "^4.1.1",
     "nuxt": "^3.13.2",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.1.1",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@nuxt/eslint-config": "^0.6.0",
+    "@primevue/nuxt-module": "^4.1.1",
     "eslint": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-vue": "^9.29.1",
-    "prettier": "^3.3.3",
-    "sass": "^1.80.4",
-    "sass-loader": "^16.0.2"
+    "prettier": "^3.3.3"
   }
 }

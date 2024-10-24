@@ -1,17 +1,10 @@
 // @ts-check
-import withNuxt from './.nuxt/eslint.config.mjs';
 import pluginVue from 'eslint-plugin-vue';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import { createConfigForNuxt } from '@nuxt/eslint-config/flat';
 
-export default withNuxt(
-  ...pluginVue.configs['flat/recommended'],
-  eslintPluginPrettierRecommended,
-
-  {
-    files: ['**/*.ts', '**/*.tsx'],
-    rules: {
-      'no-console': 'error',
-      indent: ['error', 2],
-    },
-  },
-);
+export default createConfigForNuxt({})
+  .prepend(eslintPluginPrettierRecommended, ...pluginVue.configs['flat/recommended'])
+  .overrideRules({
+    'vue/singleline-html-element-content-newline': 'off',
+  });
