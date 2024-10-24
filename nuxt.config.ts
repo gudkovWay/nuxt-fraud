@@ -22,9 +22,16 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
   },
+  rootDir: 'app',
+
+  css: ['primeicons/primeicons.css'],
   components: [
     {
       path: '@/components/widgets',
+      pathPrefix: false,
+    },
+    {
+      path: '@/components/ui',
       pathPrefix: false,
     },
   ],

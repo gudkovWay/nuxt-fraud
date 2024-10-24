@@ -15,6 +15,7 @@ const localePath = useLocalePath();
     <div class="row">
       {{ $t('welcome') }}
     </div>
+    <LanguageSwitcher />
   </main>
 </template>
 
