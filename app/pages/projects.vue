@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  title: 'Main page',
+  title: 'Project page',
 });
 const localePath = useLocalePath();
 </script>
